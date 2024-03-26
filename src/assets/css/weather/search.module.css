@@ -1,0 +1,52 @@
+.textfieldContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.textfield {
+  max-width: 700px;
+}
+
+.iconButton {
+  height: 60px;
+  width: 60px;
+  border-radius: 20px !important;
+  margin-left: 20px !important;
+}
+
+/* mobile css */
+@media screen and (max-width: 600px) {
+  .textfieldContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .iconButton {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px !important;
+  }
+}
+
+/* light theme */
+.iconButton[data-theme='light'] {
+  background-color: #6C40B5
+}
+
+/* dark theme */
+.iconButton[data-theme='dark'] {
+  background-color: #28124D;
+}

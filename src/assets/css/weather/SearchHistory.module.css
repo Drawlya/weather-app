@@ -1,0 +1,94 @@
+.paper {
+  margin-top: 20px;
+  display: flex;
+  border-radius: 16px !important;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paper:first-child {
+  margin-top: 10px;
+}
+
+.leftContent {
+  display: flex;
+  width: 84%;
+  justify-content: space-between;
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.iconButton {
+  height: 34px;
+  width: 34px;
+  margin-left: 10px !important;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF66;
+}
+
+/* mobile css */
+@media screen and (max-width: 600px) {
+  .paper {
+    border-radius: 20px !important;
+    padding: 20px;
+    max-width: 360px;
+  }
+  .leftContent {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+  }
+
+  .country {
+    font-size: 12px;
+  }
+
+  .datetime {
+    font-size: 10px;
+  }
+
+  .paperMargin {
+    margin-top: 60px;
+  }
+
+  .weatherImage {
+    width: 150px;
+    height: 150px;
+    top: -50px;
+  }
+
+  .temperature{
+    font-size: 55px !important;
+  }
+}
+
+/* light theme */
+.paper[data-theme='light'] {
+  background-color: #FFFFFF33;
+}
+
+.iconButton[data-theme='light'] {
+  background-color: #FFFFFF
+}
+
+/* dark theme */
+.paper[data-theme='dark'] {
+  background-color: #1A1A1A4D;
+}
+
+.datetime[data-theme='dark'] {
+  opacity: 0.5;
+}
+
+.iconButton[data-theme='dark'] {
+  background-color: transparent;
+  border: 2px solid #FFFFFF66;
+}

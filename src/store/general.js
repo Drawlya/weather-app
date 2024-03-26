@@ -3,8 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 // initial state
 const initialState = {
   isLoading: false,
-  error: false,
-  success: false,
 };
 
 // create reducer and action creators

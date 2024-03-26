@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  padding: 20px;
+  overflow: overlay;
+  transition: all 0.4s ease-in-out;
+}
+
+.switch {
+  display: flex;
+  justify-content: end;
+}
+
+/* mobile css */
+@media screen and (max-width: 600px) {
+  .switch {
+    margin-bottom: 20px;
+  }
+}
+
+/* light theme */
+.container[data-theme='light'] {
+  background-image: url('../../images/background/bg-light.png');
+}
+
+/* dark theme */
+.container[data-theme='dark'] {
+  background-image: url('../../images/background/bg-dark.png');
+}
